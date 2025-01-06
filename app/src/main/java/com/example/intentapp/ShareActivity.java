@@ -27,7 +27,7 @@ public class ShareActivity extends AppCompatActivity {
             shareIntent.setAction(Intent.ACTION_SEND);
             shareIntent.putExtra(Intent.EXTRA_TEXT, textToShare);
             shareIntent.setType("text/plain");
-            startActivity(Intent.createChooser(shareIntent, "share text"));
+            startActivity(Intent.createChooser(shareIntent, "share text via"));
         });
 
     }
